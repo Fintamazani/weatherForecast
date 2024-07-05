@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2em; */
+    /* padding-left: 5em;
+    padding-right: 5em; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: rgb(29, 29, 61); */
+    /* background-image:url(https://0.soompi.io/wp-content/uploads/2023/07/25005121/Kim-Sejeong-Ahn-Hyo-Seop1.jpeg); */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#forecastTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: 3em;
+
+}
+
+.dayCard {
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));;
+    width: 100vw;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 0.25em;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin: 0.25em;
+    text-align: center;
+    justify-content:space-between;
+    
+    
+}
+
+.cardTitle {
+    font-size: 17px;
+}
+
+.dateTitle {
+    font-size: 15px;
+}
+
+.temp {
+    font-size: 20px;
+}
+
+.weather{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* .forecastContainer {
+    display: flex;
+    height: auto;
+    width: 100%;
+} */
+
+#forecast {
+    /* color: rgb(0, 0, 0); */
+    height: 60vh;
+    color: rgb(78, 66, 66);
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    /* opacity: 70%; */
+    /* padding-top: 0.5em; */
+    /* margin-top: 0.5em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+#days {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 75%;
+padding-top: 2em;
+/* height:20vh; */
+/* width: 70%; */
+}
+
+.temptCond {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-right: 1cm;
+    padding-top: 3cm;
+    color: white;
+    width: 100%;
+    height: 22vh;
+    font-size: 22px;
+    /* background-color: rgb(255, 255, 255, 0.7); */
+    color: rgb(0, 0, 0);
+}
+
+.cityDate {
+    padding-top: 2cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6cm;
+    width: 100%;
+    height: 20vh;
+    font-size: 23px;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+}
+
+
+.currentWeather {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: rgb(1, 1, 1);
+    width: 100%;
+    height: 20vh;
+    /* background-color: rgb(255, 255, 255, 0.7); */
+    color: rgb(78, 66, 66); 
+}
+
+.searchCity {
+    display: flex;
+    /* flex-direction: column; */
+    column-gap: 8px;
+    align-items: center;
+    padding-top: 2.2em;
+    margin-bottom: 2em;
+    row-gap: 0.5em;
+}
+
+#inputSearch {
+    border-radius: 6px;
+    font-size: smaller;
+    border-width: 3px;
+    padding: 0.75em;
+    text-align: center;
+}
+
+#inputSearch::placeholder {
+    font-size: bigger;
+    text-align: center;
+    justify-items: center;
+}
+
+#searchButton {
+    border-width: 3px;
+    /* border:none; */
+    /* background-color: hsl(0, 0%, 100%); */
+    color: #534e4e;
+    padding: 10px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    /* font-size: smaller; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}    
+
+
+body.sunny {
+    background-image: url('https://w0.peakpx.com/wallpaper/555/285/HD-wallpaper-sunny-day-in-the-countryside-scenic-1920x1080-sunny-beautiful-clouds-beautiful-day-countryside-graphy-nice-path-scenery-road-amazing-sky-trees-cool-natur-awesome-scene-field-landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.rainy {
+    background-image: url('https://i.pinimg.com/originals/04/75/8e/04758e175f4906b99565207bd1afb4aa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.foggy {
+    background-image: url('https://live.staticflickr.com/65535/52165233759_d9943f7ba0_b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.stormy {
+    background-image: url('https://www.shutterstock.com/image-photo/tropical-storm-powerful-dangerous-lightning-600nw-2200824329.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+body.snowy {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/036/777/915/small_2x/ai-generated-a-city-street-at-night-with-snow-generative-ai-photo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+/* #oneWeek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* height:; */
+/* } */

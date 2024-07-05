@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherWeb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="currentWeather">
+        <div class="cityDate">
+            <!-- <h2 id="city">City</h2>
+            <h3 id="date">Date</h3> -->
+        </div>
+        <div class="temptCond">    
+            <!-- <h3>temperature</h3>
+            <h3>condition</h3> -->
+        </div>
+    </div>
+    <div id="forecast" class="forecast-container">
+        <div class="searchCity">
+            <input type="text" id="inputSearch" placeholder="Find City">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="forecastTitle">
+            <h2 style="text-align: center;">One Week Forecast</h2>
+        </div>
+        <div id="days">
+        <i class="weatherIcon"></i>
+        </div>
+
+    </div>
+    <script src="weatherWeb.js"></script>
+</body>
+</html>
